@@ -187,19 +187,3 @@ Comparing the status at the observation site and the nearest OBIS occurrence can
 - WRiMS does not document every alien or invasive species  
 - The script provides **screening-level insights**, not definitive ecological conclusions  
 
----
-
-## 🤝 Contributing
-
-Issues, pull requests, and feature suggestions are welcome.  
-Feel free to open an issue or PR on GitHub!
-
----
-
-## 📜 License
-
-Choose your license (MIT recommended). Example:
-
-```text
-MIT License
-```
