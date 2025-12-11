@@ -90,6 +90,7 @@ cd ANERIS_NIS
 
 ```bash
 conda env create -f ANERIS_NIS.yml
+conda activate ANERIS_NIS
 ```
 
 ### 3. Install dependencies without conda (option 2)
