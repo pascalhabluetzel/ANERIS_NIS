@@ -1,5 +1,5 @@
-# Marine Invasiveness Analysis Script  
-*A tool for combining OBIS, Marine Regions, and WRiMS data to assess marine species invasiveness across locations.*
+# Checking local occurrence status of marine species: native, introduced, invasive  
+*A tool for combining OBIS, Marine Regions, and WRiMS data to assess marine species occurrence status across locations.*
 
 ---
 
@@ -29,7 +29,7 @@ This workflow enables large-scale biogeographic screening, invasion monitoring, 
 - ✔️ Accurate **over-water distance** calculations using searoute  
 - ✔️ Integration of multiple authoritative marine datasets  
 - ✔️ Clean TSV output suitable for R, Python, GIS, or spreadsheets  
-- ✔️ Human-readable invasiveness labels  
+- ✔️ Human-readable introduction status labels  
 - ✔️ Caches repeated API queries for speed  
 
 ---
@@ -82,20 +82,17 @@ LOC002	Carcinus maenas	species
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>
+git clone https://github.com/pascalhabluetzel/ANERIS_NIS.git
+cd ANERIS_NIS
 ```
 
-### 2. Create and activate a Python environment (optional)
+### 2. Create and activate a conda environment (option 1)
 
 ```bash
-python -m venv env
-source env/bin/activate      # macOS / Linux
-# or:
-env\Scripts\activate         # Windows
+conda env create -f environment.yml
 ```
 
-### 3. Install dependencies
+### 3. Install dependencies without conda (option 2)
 
 ```bash
 pip install pandas tqdm requests searoute
@@ -115,11 +112,19 @@ SPECIES_FILE   = "species.tsv"
 OUTPUT_FILE    = "analysis_results.tsv"
 ```
 
-### 2. Run the script
+### 2. Change settings
+
+
+
+### 2. Run the script (jupyter notebook)
 
 ```bash
-python batch_invasion_analysis.py
+jupyter notebook
 ```
+
+Change relevant setting on top of the script. E.g. the maximum size of the marine regions (to avoid to include very large regions like "planet").
+
+Run notebook
 
 Progress bars will appear for:
 
@@ -170,10 +175,9 @@ Each row represents a **species occurring at a given location**.
 
 | Label | Interpretation |
 |-------|----------------|
-| **probably invasive** | Strong evidence of invasiveness in the region |
-| **probably introduced** | Non-native but not clearly invasive |
-| **probably native** | Distribution present without alien status |
-| **no WRiMS distribution record** | No WRiMS information available |
+| **probably invasive** | Probably invasive in the region |
+| **probably introduced** | Probably introduced but not invasive |
+| **status unknown (possibly native)** | WRiMS does often not explicitely mention native status. Species may be native or no data on introduction status is available |
 
 Comparing the status at the observation site and the nearest OBIS occurrence can reveal biogeographic transitions or early-stage invasions.
 
@@ -184,6 +188,7 @@ Comparing the status at the observation site and the nearest OBIS occurrence can
 - Requires **internet access** for OBIS, Marine Regions, and WoRMS APIs  
 - Long-running for large datasets  
 - OBIS coverage varies by taxon  
-- WRiMS does not document every alien or invasive species  
+- WRiMS does not document every alien or invasive species
+- First tests revealed that about 60 % of introduced species are labeled as status unknown  
 - The script provides **screening-level insights**, not definitive ecological conclusions  
 
