@@ -189,6 +189,6 @@ Comparing the status at the observation site and the nearest OBIS occurrence can
 - Long-running for large datasets  
 - OBIS coverage varies by taxon  
 - WRiMS does not document every alien or invasive species
-- First tests revealed that about 60 % of introduced species are labeled as status unknown  
+- First tests revealed that about 40 % of introduced species are labeled as status unknown  
 - The script provides **screening-level insights**, not definitive ecological conclusions  
 
