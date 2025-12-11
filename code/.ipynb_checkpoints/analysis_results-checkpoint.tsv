@@ -1,0 +1,10 @@
+locationID	verbatimLatitude	verbatimLongitude	decimalLatitude	decimalLongitude	scientificName	taxonRank	closest_obis_lat	closest_obis_lon	distance_over_water_km	wrims_status_new_location	wrims_status_closest_obis
+Site A	"51°06'39.3""N"	"2°36'13.6""E"	51.11091666666667	2.6037777777777777	Crepidula fornicata	species	51.185	2.7095	0.0	probably introduced	probably introduced
+Site A	"51°06'39.3""N"	"2°36'13.6""E"	51.11091666666667	2.6037777777777777	Oithona davisae	species	44.1667	29.1333	6060.118923981703	probably native	probably introduced
+Site A	"51°06'39.3""N"	"2°36'13.6""E"	51.11091666666667	2.6037777777777777	Mytilus edulis	species	51.194666666667	2.8146666666667	0.0	probably native	probably native
+Site B	"43°06'24.1""N"	"5°56'50.5""E"	43.10669444444444	5.947361111111111	Caulerpa cylindracea	species	43.0186	6.1503	0.0	probably native	probably introduced
+Site B	"43°06'24.1""N"	"5°56'50.5""E"	43.10669444444444	5.947361111111111	Womersleyella setacea	species	42.521491	6.784678	69.5516577462458	probably native	probably invasive
+Site B	"43°06'24.1""N"	"5°56'50.5""E"	43.10669444444444	5.947361111111111	Posidonia oceanica	species	43.08618853494	5.7828059551613	0.0	probably native	probably native
+Site C	"58°53'47.4""N"	"17°57'10.3""E"	58.896499999999996	17.952861111111112	Marenzelleria viridis	species	58.7689	17.7523	0.0	probably native	probably invasive
+Site C	"58°53'47.4""N"	"17°57'10.3""E"	58.896499999999996	17.952861111111112	Eriocheir sinensis	species	59.781389236450195	20.046109199523926	142.31778764186637	probably invasive	probably introduced
+Site C	"58°53'47.4""N"	"17°57'10.3""E"	58.896499999999996	17.952861111111112	Fucus vesiculosus	species	58.86312	18.09118	0.0	probably native	probably native
