@@ -89,13 +89,13 @@ cd ANERIS_NIS
 ### 2. Create and activate a conda environment (option 1)
 
 ```bash
-conda env create -f environment.yml
+conda env create -f ANERIS_NIS.yml
 ```
 
 ### 3. Install dependencies without conda (option 2)
 
 ```bash
-pip install pandas tqdm requests searoute
+pip install pandas tqdm requests searoute jupyterlab
 ```
 
 ---
