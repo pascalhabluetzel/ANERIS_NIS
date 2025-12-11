@@ -156,12 +156,11 @@ Each row represents a **species occurring at a given location**.
 | `wrims_status_new_location` | WRiMS-based label at your location |
 | `wrims_status_closest_obis` | WRiMS-based label at the closest OBIS location |
 
-### WRiMS labels include:
+### Occurrence status labels include:
 
 - **probably invasive**  
 - **probably introduced**  
-- **probably native**  
-- **no WRiMS distribution record**
+- **status unknown (possibly native)**  
 
 ---
 
@@ -172,7 +171,7 @@ Each row represents a **species occurring at a given location**.
 - **Small (<100 km):** likely within known range  
 - **Large (> several hundred km):** possible new introduction, range expansion, or sampling gap  
 
-### WRiMS invasiveness categories
+### Invasiveness categories
 
 | Label | Interpretation |
 |-------|----------------|
